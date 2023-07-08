@@ -4,6 +4,7 @@ const appSlice = createSlice({
   name: "app",
   initialState: {
     isMenuOpen: true,
+    correlation: undefined,
   },
   reducers: {
     toggleMenu: (state) => {
@@ -13,10 +14,13 @@ const appSlice = createSlice({
     closeMenu: (state) => {
       state.isMenuOpen = false;
     },
+    setCorrelationId: (state, action) => {
+      state.correlation = action.payload;
+    }
   },
 });
 
 export default appSlice.reducer;
-export const { toggleMenu, closeMenu } = appSlice.actions;
+export const { toggleMenu, closeMenu, setCorrelationId } = appSlice.actions;
 
 
