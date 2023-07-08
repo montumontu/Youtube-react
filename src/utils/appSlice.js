@@ -20,6 +20,7 @@ const appSlice = createSlice({
   },
 });
 
+
 export default appSlice.reducer;
 export const { toggleMenu, closeMenu, setCorrelationId } = appSlice.actions;
 
