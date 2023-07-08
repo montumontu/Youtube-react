@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 
 function useCorrelation() {
-  console.log("useCorrelation");
+  console.log("useCorrelation id ");
   const correlation = useSelector(store => store.app.correlation)
   const dispatch = useDispatch();
 
